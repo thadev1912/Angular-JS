@@ -11,6 +11,7 @@ import { ConComponent } from './Component/con/con.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SinhvienCreateComponent } from './Component/sinhvien-create/sinhvien-create.component';
 import { SinhvienComponent } from './Component/sinhvien/sinhvien.component';
+import { DemoComponent } from './Component/demo/demo.component';
 
 
 
@@ -24,6 +25,7 @@ import { SinhvienComponent } from './Component/sinhvien/sinhvien.component';
     ChaComponent,
     ConComponent,
     SinhvienCreateComponent,
+    DemoComponent,
    
 
   
