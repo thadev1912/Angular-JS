@@ -20,6 +20,13 @@ export class SinhvienService {
     return this.http.post<any>('http://localhost:8080/sinhvien/store_api',data);
    }
    //Sửa
+   Edit(id:any):Observable<any>{
+    return this.http.get<any>('http://localhost:8080/sinhvien/edit_api/'+id);
+   }
+   //Cập nhật
+   Update(data:any):Observable<any>{
+    return this.http.put<any>('http://localhost:8080/sinhvien/delete_api',data);
+   }
    //Xóa
    Delete(id:any):Observable<any>{
     return this.http.delete<any>('http://localhost:8080/sinhvien/delete_api/'+id);
