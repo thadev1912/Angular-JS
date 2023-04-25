@@ -1,0 +1,34 @@
+<div class="card mt-3">    
+    <div class="card-header bg-danger text-white">
+        <h3 class="font-weight-bold ">DANH SÁCH SINH VIÊN</h3>
+  </div>
+  <div> <a href="them_sinhvien" class=" btn btn-primary mt-3"><i
+    class="btn-icon-only icon-edit mt-3">Thêm mới</i></a> <br></div>
+    <div class="card-body">
+        <table class="table table-bordered">
+        <tr>
+            <th>Mã Sinh Viên</th>
+            <th>Tên Sinh Viên</th>
+            <th>Giới Tính</th>
+            <th>Ngày Sinh</th>
+            <th>Địa Chỉ</th>
+            <th>Tùy Chỉnh</th>
+        </tr>
+        <tbody>
+           
+                
+                <tr  *ngFor="let sv of sinhviens">
+                    <td >{{sv.ma_sv}}</td>
+                    <td>{{sv.ten_sv}}</td>
+                    <td>{{sv.gioitinh_sv}}</td>
+                    <td>{{sv.ngaysinh_sv}}</td>
+                    <td>{{sv.diachi_sv}}</td>
+                    <td><button class="btn btn-primary" (click)="Edit(sv.id)">Sửa</button>||
+                      <button class="btn btn-primary" (click)="Delete(sv.id)">Xóa</button></td>
+                </tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+  </div>

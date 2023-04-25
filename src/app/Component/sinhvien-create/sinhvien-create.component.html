@@ -1,0 +1,35 @@
+<h1>THÊM MỚI SINH VIÊN</h1>
+<form action="" method="post" [formGroup]="Themmoi" (ngSubmit)="Addnew()" >
+    <div class="form-row"> <!--thuộc tính form-row nó giúp chia 2 cột trên 1 row của nó-->
+        <div class="col-6">
+            <label>MÃ SINH VIÊN</label>
+            <input name="txt_ma_sv" id="txt_ma_sv" class="form-control" type="text" formControlName="ma_sv">
+              
+        </div>
+       <div class="col-6">
+            <label>TÊN SINH VIÊN</label>
+            <input name="txt_ten_sv" id="txt_ten_sv" class="form-control" type="text" formControlName="ten_sv">
+           
+        </div>
+        </div>
+         <div class="form-row"> <!--thuộc tính form-row nó giúp chia 2 cột trên 1 row của nó-->
+        <div class="col-6">
+            <label>NGÀY SINH </label>
+            <input  name="txt_ngaysinh_sv" id="txt_ngaysinh_sv" class="form-control" type="date" formControlName="ngaysinh_sv">           
+        </div>
+               
+            <div class="col-6">
+                <label>GIỚI TÍNH </label>
+                <input  name="txt_ngaysinh_sv" id="txt_gioitinh_sv" class="form-control" type="text" formControlName="gioitinh_sv">
+               
+            </div>
+                
+            <div class="col-6">
+                <label>ĐỊA CHỈ </label>
+                <input  name="txt_ngaysinh_sv" id="txt_diachi_sv" class="form-control" type="text" formcontrolName="diachi_sv">
+               
+            </div>
+        
+</div>
+<button type="submit" class="btn btn-danger mt-3"> Lưu Lại</button>
+</form>
